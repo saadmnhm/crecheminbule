@@ -1,0 +1,1348 @@
+/*
+Custom Widgets CSS
+Fixes for accordion functionality, widget display, and enhanced styling
+*/
+
+/* Fix accordion styling */
+details[id^="e-n-accordion-item"] {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details[id^="e-n-accordion-item"]:hover {
+    box-shadow: 0 4px 12px rgba(87, 80, 160, 0.15);
+}
+
+
+
+details[id^="e-n-accordion-item"] summary:hover {
+    background-color: #4a4395;
+}
+
+details[id^="e-n-accordion-item"] summary::-webkit-details-marker {
+    display: none;
+}
+
+details[id^="e-n-accordion-item"] summary::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+details[id^="e-n-accordion-item"][open] summary::after {
+    transform: rotate(45deg);
+}
+
+details[id^="e-n-accordion-item"] summary svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+details[id^="e-n-accordion-item"][open] summary svg:last-of-type {
+    transform: rotate(45deg);
+}
+
+details[id^="e-n-accordion-item"] ul {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+details[id^="e-n-accordion-item"] ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    line-height: 1.6;
+    border-left: 3px solid #5750A0;
+    transition: all 0.3s ease;
+}
+
+details[id^="e-n-accordion-item"] ul li:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+details[id^="e-n-accordion-item"] ul li svg {
+    width: 20px;
+    height: 20px;
+    fill: #5750A0;
+    margin-right: 15px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+details[id^="e-n-accordion-item"] ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Fix duplicate lists styling */
+.entry-content > ul:not(:first-of-type) {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #5750A0;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry-content > ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.entry-content > ul li:hover {
+    background-color: #f1f3f4;
+    transform: translateX(3px);
+}
+
+.entry-content > ul li svg {
+    width: 20px;
+    height: 20px;
+    fill: #5750A0;
+    margin-right: 15px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Fix values section styling */
+.entry-content h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.entry-content h2 + p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.entry-content h2 + p svg {
+    width: 40px;
+    height: 40px;
+    fill: #5750A0;
+}
+
+/* Values grid layout */
+.entry-content h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.entry-content h3 + p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+/* Hide empty elements and broken content */
+li:empty,
+h3:empty,
+p:empty {
+    display: none !important;
+}
+
+/* Fix broken SVG elements */
+svg[fill=""] {
+    fill: #5750A0 !important;
+}
+
+svg path[d=""] {
+    display: none;
+}
+
+/* Hide duplicate lists that appear after accordions */
+.entry-content details + ul {
+    display: none !important;
+}
+
+/* Fix broken styles in values section */
+.entry-content style {
+    display: none !important;
+}
+
+.entry-content g {
+    display: none !important;
+}
+
+/* Fix image section styling */
+.image-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activity-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.activity-image:hover {
+    transform: scale(1.02);
+}
+
+/* Fix accordion SVG positioning */
+details summary svg {
+    width: 16px !important;
+    height: 16px !important;
+    fill: white !important;
+    flex-shrink: 0;
+}
+
+/* Fix list item SVG positioning */
+details ul li svg {
+    width: 24px !important;
+    height: 24px !important;
+    fill: #5750A0 !important;
+    flex-shrink: 0;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+/* Ensure proper text alignment in list items */
+details ul li {
+    display: flex !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+
+/* Fix broken content after accordions */
+.entry-content > ul + ul {
+    display: none !important;
+}
+
+/* Progressive enhancement for accordion functionality */
+details:not([open]) ul {
+    display: none;
+}
+
+details[open] ul {
+    display: block;
+    animation: accordionSlide 0.3s ease-out;
+}
+
+@keyframes accordionSlide {
+    from {
+        opacity: 0;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Fix header hierarchy issues */
+.entry-content h2 + h2 {
+    margin-top: 60px;
+}
+
+/* NOS VALEURS Section Enhanced Styling */
+.entry-content h2:contains("NOS VALEURS"),
+.entry-content h2[data-values="true"] {
+    background: linear-gradient(135deg, #5750A0 0%, #4a4395 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 50px 0 40px 0;
+    box-shadow: 0 8px 25px rgba(87, 80, 160, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.entry-content h2:contains("NOS VALEURS")::before,
+.entry-content h2[data-values="true"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.8s ease;
+}
+
+.entry-content h2:contains("NOS VALEURS"):hover::before,
+.entry-content h2[data-values="true"]:hover::before {
+    left: 100%;
+}
+
+/* Values Grid Container */
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+/* Individual Value Item */
+.value-item {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(87, 80, 160, 0.1);
+}
+
+.value-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #5750A0, #7B68EE, #9370DB);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(87, 80, 160, 0.2);
+}
+
+.value-item:hover::before {
+    transform: scaleX(1);
+}
+
+/* Value Icons */
+.value-item .value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #5750A0 0%, #7B68EE 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.value-item:hover .value-icon {
+    background: linear-gradient(135deg, #4a4395 0%, #6a5acd 100%);
+    transform: scale(1.1);
+}
+
+.value-item .value-icon svg {
+    width: 40px !important;
+    height: 40px !important;
+    fill: white !important;
+    transition: all 0.3s ease;
+}
+
+.value-item:hover .value-icon svg {
+    transform: scale(1.1);
+}
+
+/* Value Titles */
+.value-item h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0 15px 0;
+    line-height: 1.3;
+    position: relative;
+}
+
+.value-item h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #5750A0, #7B68EE);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.value-item:hover h3::after {
+    width: 80px;
+}
+
+/* Value Descriptions */
+.value-item p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0 0 0;
+    transition: color 0.3s ease;
+}
+
+.value-item:hover p {
+    color: #555;
+}
+
+/* Fix broken paragraph content */
+.entry-content p:has(g) {
+    display: none !important;
+}
+
+.entry-content p:has(style) {
+    display: none !important;
+}
+
+/* Enhanced visual hierarchy */
+.entry-content h2:not(:first-child) {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #f0f0f0;
+}
+
+/* Page-specific fixes for pedagogique */
+.page-id-194 .entry-content {
+    line-height: 1.7;
+}
+
+.page-id-194 .entry-content ul li {
+    margin-bottom: 20px;
+}
+
+.page-id-194 .entry-content h3 + p {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Legacy SVG fixes for compatibility */
+.entry-content h2:contains("NOS VALEURS") + p svg {
+    width: 60px !important;
+    height: 60px !important;
+    fill: #5750A0 !important;
+    display: block !important;
+    margin: 20px auto !important;
+}
+
+.value-icon {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.value-icon svg {
+    width: 60px !important;
+    height: 60px !important;
+    fill: #5750A0 !important;
+}
+
+/* Emergency fixes for all broken SVGs and content */
+.entry-content svg:empty {
+    display: none !important;
+}
+
+.entry-content svg[id="_x32_"] {
+    display: none !important;
+}
+
+.entry-content style[type="text/css"] {
+    display: none !important;
+}
+
+.entry-content .st0 {
+    display: none !important;
+}
+
+.entry-content g {
+    display: none !important;
+}
+
+/* Force hide all duplicate content after accordions */
+.entry-content details:last-of-type ~ ul,
+.entry-content details:last-of-type ~ p:has(img) ~ ul {
+    display: none !important;
+}
+
+/* Ensure all SVGs in accordions work properly */
+details summary svg,
+details ul li svg {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Fix any remaining layout issues */
+.entry-content > * {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* Values section specific styling */
+.entry-content h2 + p:has(svg) {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Responsive Design for Values Section */
+@media (max-width: 768px) {
+    .values-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .value-item {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .value-item .value-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .value-item .value-icon svg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .value-item h3 {
+        font-size: 20px;
+    }
+    
+    .value-item p {
+        font-size: 15px;
+    }
+    
+    .entry-content h2:contains("NOS VALEURS"),
+    .entry-content h2[data-values="true"] {
+        font-size: 24px;
+        padding: 25px 20px;
+        margin: 30px 0 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .value-item {
+        padding: 20px 15px;
+    }
+    
+    .value-item .value-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .value-item .value-icon svg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .value-item h3 {
+        font-size: 18px;
+        margin: 15px 0 10px 0;
+    }
+    
+    .value-item p {
+        font-size: 14px;
+    }
+}
+
+/* Animation Enhancements */
+.value-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.value-item:nth-child(1) { animation-delay: 0.1s; }
+.value-item:nth-child(2) { animation-delay: 0.2s; }
+.value-item:nth-child(3) { animation-delay: 0.3s; }
+.value-item:nth-child(4) { animation-delay: 0.4s; }
+.value-item:nth-child(5) { animation-delay: 0.5s; }
+.value-item:nth-child(6) { animation-delay: 0.6s; }
+
+.value-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse animation for icons */
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.value-item .value-icon {
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+.value-item:hover .value-icon {
+    animation: none;
+}
+
+/* Comprehensive accordion fix */
+details {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    margin-bottom: 15px !important;
+    overflow: hidden !important;
+}
+
+details summary {
+    background: #5750A0 !important;
+    color: white !important;
+    padding: 20px !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+details summary::-webkit-details-marker {
+    display: none !important;
+}
+
+details summary::after {
+    content: '+' !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    transition: transform 0.3s ease !important;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg) !important;
+}
+
+details ul {
+    background: white !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    list-style: none !important;
+}
+
+details ul li {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    background: #f9f9f9 !important;
+    border-radius: 6px !important;
+    border-left: 3px solid #5750A0 !important;
+}
+
+details ul li svg {
+    width: 24px !important;
+    height: 24px !important;
+    fill: #5750A0 !important;
+    margin-right: 15px !important;
+    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .image-section {
+        margin: 20px 0;
+        padding: 15px;
+    }
+    
+    .entry-content h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+    
+    .entry-content h3 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    
+    details ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    details ul li svg {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    details summary {
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    details summary {
+        padding: 12px !important;
+        font-size: 13px !important;
+    }
+    
+    details ul {
+        padding: 15px !important;
+    }
+    
+    details ul li {
+        padding: 12px !important;
+    }
+}
+
+/* Widget styling enhancement */
+#recent-posts-1 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#recent-posts-1.widget_recent_entries {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 4px solid #5750A0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recent-posts-1 .widget-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5750A0;
+    padding-bottom: 10px;
+}
+
+#recent-posts-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#recent-posts-1 ul li {
+    margin-bottom: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 25px;
+}
+
+#recent-posts-1 ul li:last-child {
+    border-bottom: none;
+}
+
+#recent-posts-1 ul li::before {
+    content: "▶";
+    color: #5750A0;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 12px;
+}
+
+#recent-posts-1 ul li a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    display: block;
+    line-height: 1.4;
+}
+
+#recent-posts-1 ul li a:hover,
+#recent-posts-1 ul li a:focus {
+    color: #5750A0;
+    transform: translateX(8px);
+    text-decoration: none;
+}
+
+/* Sidebar general styling */
+#secondary .widget {
+    background-color: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #5750A0;
+}
+
+#secondary .widget .widget-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5750A0;
+    padding-bottom: 10px;
+}
+
+/* Animation for widget loading */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.widget {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    details[id^="e-n-accordion-item"] summary {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    details[id^="e-n-accordion-item"] ul {
+        padding: 15px;
+    }
+    
+    details[id^="e-n-accordion-item"] ul li {
+        flex-direction: column;
+        text-align: left;
+        padding: 12px;
+    }
+    
+    details[id^="e-n-accordion-item"] ul li svg {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .entry-content > ul {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .entry-content h2 {
+        font-size: 20px;
+    }
+    
+    .entry-content h3 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    
+    #secondary .widget {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    details[id^="e-n-accordion-item"] summary {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    details[id^="e-n-accordion-item"] ul {
+        padding: 12px;
+    }
+    
+    .entry-content h2 {
+        font-size: 18px;
+        margin: 25px 0 15px 0;
+    }
+    
+    .entry-content h3 {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .entry-content h3 + p {
+        font-size: 14px;
+    }
+}
+
+/* ============================================
+   IMAGE SLIDER STYLES
+   ============================================ */
+
+.image-slider-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-slider {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(87, 80, 160, 0.8);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.slider-btn:hover {
+    background: rgba(87, 80, 160, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(87, 80, 160, 0.4);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+/* Dots Indicators */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.dot.active {
+    background: #5750A0;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 3px rgba(87, 80, 160, 0.3);
+}
+
+.dot:hover {
+    background: rgba(87, 80, 160, 0.8);
+}
+
+/* Counter */
+.slider-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+/* Description */
+.slider-description {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #5750A0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-slider-wrapper {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+    
+    .slider-container {
+        height: 400px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    .slider-dots {
+        bottom: 15px;
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .slider-counter {
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .slider-description {
+        padding: 20px;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 300px;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .slider-description {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Focus styles for accessibility */
+.slider-btn:focus,
+.dot:focus {
+    outline: 2px solid #5750A0;
+    outline-offset: 2px;
+}
+
+/* ============================================
+   EVENTS CAROUSEL SPECIFIC STYLES
+   ============================================ */
+
+.events-carousel {
+    margin: 2rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.events-carousel .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.events-carousel .slide img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.events-carousel .slide img:hover {
+    transform: scale(1.02);
+}
+
+.events-carousel .slide-description {
+    text-align: center;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+.events-carousel .slide-description h3 {
+    color: #5750A0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.events-carousel .slide-description p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Events carousel navigation */
+.events-carousel .slider-btn {
+    background: linear-gradient(135deg, #5750A0, #7B68EE);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(87, 80, 160, 0.3);
+}
+
+.events-carousel .slider-btn:hover {
+    background: linear-gradient(135deg, #7B68EE, #5750A0);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(87, 80, 160, 0.4);
+}
+
+.events-carousel .prev-btn {
+    left: 20px;
+}
+
+.events-carousel .next-btn {
+    right: 20px;
+}
+
+.events-carousel .slider-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Events carousel dots */
+.events-carousel .slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.events-carousel .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(87, 80, 160, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.events-carousel .dot.active,
+.events-carousel .dot:hover {
+    background: #5750A0;
+    transform: scale(1.2);
+}
+
+/* Events carousel counter */
+.events-carousel .slide-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(87, 80, 160, 0.9);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+/* Responsive adjustments for events carousel */
+@media (max-width: 768px) {
+    .events-carousel .slide-content {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    
+    .events-carousel .slide-description h3 {
+        font-size: 1.5rem;
+    }
+    
+    .events-carousel .slide-description p {
+        font-size: 1rem;
+    }
+    
+    .events-carousel .slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .events-carousel .prev-btn {
+        left: 10px;
+    }
+    
+    .events-carousel .next-btn {
+        right: 10px;
+    }
+    
+    .events-carousel .slider-dots {
+        bottom: 10px;
+        padding: 8px 15px;
+    }
+    
+    .events-carousel .slide-counter {
+        top: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-carousel .slide-content {
+        padding: 1rem 0.5rem;
+    }
+    
+    .events-carousel .slide img {
+        max-height: 250px;
+    }
+    
+    .events-carousel .slide-description h3 {
+        font-size: 1.3rem;
+    }
+}
