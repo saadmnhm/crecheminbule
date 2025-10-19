@@ -86,161 +86,137 @@ include '../topbar.php';
                                         
                                     </div>
 
-                                    <h2>
-                                        Apprendre, Créer et Grandir</h2>
-                                    <details id="e-n-accordion-item-1820" open="">
-                                        <summary data-accordion-index="1" tabindex="0" aria-expanded="true"
-                                            aria-controls="e-n-accordion-item-1820">
-                                            PROGRAMME TRILINGUE<br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                        </summary>
-                                        <ul>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Encourager le développement de la curiosité et de l’esprit ouvert chez
-                                                les enfants.
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Favoriser une meilleure concentration du cerveau grâce à un
-                                                apprentissage trilingue.
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Stimuler les capacités métacognitives et métalinguistiques chez
-                                                l’enfant.
-                                            </li>
-                                        </ul>
-                                    </details>
-                                    <details id="e-n-accordion-item-1821">
-                                        <summary data-accordion-index="2" tabindex="-1" aria-expanded="false"
-                                            aria-controls="e-n-accordion-item-1821">
-                                            ACTIVITÉS ARTISTIQUES<br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                        </summary>
-                                        <ul>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Développer l’imaginaire des enfants, leurs créativités
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Favoriser leur éveil sensoriel, corporel et leur motricité.
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Développer leurs habilités sociales.
-                                            </li>
-                                        </ul>
-                                    </details>
-                                    <details id="e-n-accordion-item-1822">
-                                        <summary data-accordion-index="3" tabindex="-1" aria-expanded="false"
-                                            aria-controls="e-n-accordion-item-1822">
-                                            ACTIVITÉS DE PSYCHOMOTRICITÉ<br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                            <svg aria-hidden="true" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
-                                                </path>
-                                            </svg><br>
-                                        </summary>
-                                        <ul>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                La prise de conscience de leur corps,
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Le déplacement dans l’espace,
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                L’interaction avec leur environnement,
-                                            </li>
-                                            <li>
-                                                <svg aria-hidden="true" viewBox="0 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                                                    </path>
-                                                </svg><br>
-                                                Le développement de leurs capacités motrices.
-                                            </li>
-                                        </ul>
-                                    </details>
+
+                                    <div class="aventage_aproche">
+                                        
+                                        <div class="aventage">
+                                            <h2 class="titel-aproche2"> Apprendre, Créer et Grandir</h2>
+                                            <details id="e-n-accordion-item-1820" open="">
+                                                <summary data-accordion-index="1" tabindex="0" aria-expanded="true"
+                                                    aria-controls="e-n-accordion-item-1820">
+                                                    PROGRAMME TRILINGUE<br>
+                                                   
+                                                </summary>
+                                                <ul>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Encourager le développement de la curiosité et de l’esprit ouvert chez
+                                                        les enfants.
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Favoriser une meilleure concentration du cerveau grâce à un
+                                                        apprentissage trilingue.
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Stimuler les capacités métacognitives et métalinguistiques chez
+                                                        l’enfant.
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                            <details id="e-n-accordion-item-1821">
+                                                <summary data-accordion-index="2" tabindex="-1" aria-expanded="false"
+                                                    aria-controls="e-n-accordion-item-1821">
+                                                    ACTIVITÉS ARTISTIQUES<br>
+                                                </summary>
+                                                <ul>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Développer l’imaginaire des enfants, leurs créativités
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Favoriser leur éveil sensoriel, corporel et leur motricité.
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Développer leurs habilités sociales.
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                            <details id="e-n-accordion-item-1822">
+                                                <summary data-accordion-index="3" tabindex="-1" aria-expanded="false"
+                                                    aria-controls="e-n-accordion-item-1822">
+                                                    ACTIVITÉS DE PSYCHOMOTRICITÉ<br>
+                                                </summary>
+                                                <ul>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        La prise de conscience de leur corps,
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Le déplacement dans l’espace,
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        L’interaction avec leur environnement,
+                                                    </li>
+                                                    <li>
+                                                        <svg aria-hidden="true" viewBox="0 0 512 512"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                            </path>
+                                                        </svg><br>
+                                                        Le développement de leurs capacités motrices.
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </div>
+                                        <div class="image">
+                                            <img src="<?php echo $base_path; ?>assets/images/pexels_cottonbro.jpg" alt="">
+                                        </div>
+
+                                       
+                                    </div>
+                                        
                                     <ul>
                                         <li>
                                             <svg aria-hidden="true" viewBox="0 0 512 512"

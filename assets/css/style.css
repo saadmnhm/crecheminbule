@@ -7399,6 +7399,17 @@ ul.products .entry-container {
     }
 }
 
+
+.aventage_aproche{
+    display: flex;
+    justify-content: space-around;
+    .image{
+        img{
+            max-width: 400px;
+        }
+    }
+}
+
 @media (max-width:1024px){
     .object_aproche{
     display: block;
@@ -7438,3 +7449,4 @@ ul.products .entry-container {
 	 background-repeat: repeat-x;
 	 background-size: 20px 16px;
 }
+

@@ -82,8 +82,8 @@ function is_active_page($page_name, $current_page, $current_dir) {
         href='<?php echo $base_path; ?>assets/css/custom-widgets.css' type='text/css' media='all'>
     <script type="text/javascript" src="<?php echo $base_path; ?>assets/js/jquery.min.js" id="jquery-core-js"></script>
     <script type="text/javascript" src="<?php echo $base_path; ?>assets/js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-    <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle-1-32x32.png" sizes="32x32">
-    <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle-1-192x192.png" sizes="192x192">
+    <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle.png" sizes="32x32">
+    <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle.png" sizes="192x192">
     <link rel="apple-touch-icon" href="<?php echo $base_path; ?>assets/images/icon/croched-logo-creche-minibulle-1-180x180.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
