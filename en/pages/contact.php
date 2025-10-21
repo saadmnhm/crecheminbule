@@ -1,6 +1,6 @@
 <?php
 // Set custom page title for SEO
-$page_title = 'Contact Us - Minibulle Nursery Rabat | Get Information & Visit';
+$page_title = 'Contact Us - Minibulle Nursery Casablanca | Get Information & Visit';
 
 include '../header.php';
 ?>

@@ -126,6 +126,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
         /* body,p,h1,h2,h3,h4,h5,h6 {
             font-family: "Cherry Bomb One" !important;
         } */
+         .text-center{
+            text-align: center !important;
+         }
 
         :where(.is-layout-flex) {
             gap: 0.5em;
@@ -1132,6 +1135,8 @@ a:active {
 }
 .main-navigation ul.nav-menu > li > a {
     color: #555555;
+    display: grid;
+    justify-items: center;
 }
 .main-navigation ul.nav-menu > li:hover > a,
 .main-navigation ul.nav-menu > li.focus > a {
@@ -5732,6 +5737,7 @@ ul.products .entry-container {
     }
     .main-navigation ul#primary-menu > li {
         text-align: center;
+
     }
     .main-navigation ul.nav-menu > li.fa,
     .main-navigation ul.nav-menu > li.fas,
@@ -7298,7 +7304,7 @@ ul.products .entry-container {
 }
 
 
-
+.english-icon,
 .frensh-icon{
     position: relative;
     top: 4px;
@@ -7402,22 +7408,193 @@ ul.products .entry-container {
 
 .aventage_aproche{
     display: flex;
+    margin-top: 90px;
     justify-content: space-around;
+    background: linear-gradient(7deg, #69bfd7c4 31%, transparent);
+    padding: 30px 20px;
+    border-radius: 18px;
+    .title-aproche2{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .aventage{
+        width: 100%;
+        margin: 0 30px 0 0;
+        p{
+            margin: 0;
+            font-size: 19px;
+            font-weight: 500;
+
+        }
+    }
     .image{
         img{
-            max-width: 400px;
+            max-width: 450px;
         }
     }
 }
 
-@media (max-width:1024px){
-    .object_aproche{
-    display: block;
-    .image-object{
-        min-width: auto;
-        text-align: center;
+.valeur{
+    margin-top: 55px;
+    .container-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+    }
+        
+    .card{
+            text-align: center;
+             width: 270px;
+             h3{
+                font-weight: 600;
+             }
+        svg{
+            width: 60px !important;
+            height: auto;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
     }
 }
+@media (max-width:1024px){
+    .object_aproche{
+        display: block;
+        .image-object{
+            min-width: auto;
+            text-align: center;
+        }
+    }
+    .aventage_aproche{
+        display: block;
+        text-align: center;
+        .image{
+            margin-top: 30px;
+            img{
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    .container-card{
+        display: block !important;
+    }
+   #site-navigation{
+     .icon{
+        display:none;
+     }   
+    }
+}
+.container-card-inscription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div:first-child{
+        background-color: #b7dabc ; 
+        .zigzag:after{
+            background: linear-gradient(-135deg, #b7dabc 8px, transparent 0) 0 8px, linear-gradient(135deg, #b7dabc 8px, transparent 0) 0 8px;
+            background-position: top left;
+            background-repeat: repeat-x;
+            background-size: 20px 16px;
+        }
+
+   }
+    div:nth-child(2){
+        background-color:#adc6ca ;
+        .zigzag:after{
+            background: linear-gradient(-135deg, #adc6ca 8px, transparent 0) 0 8px, linear-gradient(135deg, #adc6ca 8px, transparent 0) 0 8px;
+            background-position: top left;
+            background-repeat: repeat-x;
+            background-size: 20px 16px;
+        }
+
+    }
+    div:nth-child(3){
+        background-color: #c09ca0;      
+        .zigzag:after{
+            background: linear-gradient(-135deg, #c09ca0 8px, transparent 0) 0 8px, linear-gradient(135deg, #c09ca0 8px, transparent 0) 0 8px;
+            background-position: top left;
+            background-repeat: repeat-x;
+            background-size: 20px 16px;
+        }
+    }
+    .zigzag:before {
+        background: linear-gradient(-135deg, #ffffff 8px, transparent 0) 0 8px, linear-gradient(135deg, #ffffff 8px, transparent 0) 0 8px;
+        background-position: top left;
+        background-repeat: repeat-x;
+        background-size: 20px 16px;
+    }
+    .zigzag{
+        background: none !important;
+        margin: -1px 0 28px 0;
+        position: relative;
+        height: 16px;
+        left: 80px;
+        width: 170px;
+    }
+
+    .card{
+        max-width: 360px;
+        margin: 10px 15px;
+        padding: 10px 10px;
+        text-align: center;
+        color: white;
+        border-radius: 8px;
+        max-width: 350px;
+        p{
+                      font-size: 17px;
+            font-weight: 700;
+
+        }
+        img{
+            width: 330px ;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+    }
+}
+
+
+
+#site-navigation{
+    .icon{
+        width: 65px;
+        height: 65px;
+        padding: 15px;
+        border-radius: 59px;
+        align-content: center;
+        border: 5px solid white;
+        margin-bottom: 10px;
+        
+    }
+    .icon1 {
+        background-color: #fbb653;
+        outline: 1px solid #fbb653;
+    }
+    .icon2{
+        background-color:  #fc5c51;
+        outline: 1px solid #fc5c51;
+    }
+    .icon3{
+        background-color: #acca6d ;
+        outline: 1px solid #acca6d;
+    }
+    .icon4{
+        background-color: #85bed3;
+        outline: 1px solid #85bed3;
+    }
+    .icon5{
+        background-color: #57509b ;
+        outline: 1px solid #57509b;
+    }
+    .icon:hover{
+        transform: rotate(360deg);
+        transition: transform 0.5s;
+    }
 }
 .zigzag {
     margin: -7px 0 28px 0;
@@ -7450,3 +7627,101 @@ ul.products .entry-container {
 	 background-size: 20px 16px;
 }
 
+
+.visit-section h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.visit-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.visit-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.visit-form label {
+  color: #a3a400;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.visit-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.visit-form input:focus{
+    border-color: #a3a400;
+    outline: none;
+}
+
+.visit-form button {
+  background: #a3a400;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.visit-form button:hover {
+  background: #8d8e00;
+}
+
+.visit-text {
+  flex: 1;
+  min-width: 300px;
+  p,
+  h3{
+    margin: 0 0 24px 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+}
+
+.visit-text h3 {
+    color: #ba8863 !important;
+    font-size: 60px !important;
+}
+
+.visit-text p {
+    font-size: 22px !important;
+    font-weight: 500;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-contact{
+        border-top: 1px solid black;
+    margin-top: 20px;
+
+    h2{
+        font-size: 28px;
+    }
+    ul{
+        li{
+            list-style-position: inside;
+            list-style-position: inside;
+            color: #333;
+            font-size: 19px;
+            font-weight: 200;
+            margin: 30px 0 20px 0;
+            text-align: center;
+            position: relative;
+        }
+    }
+}

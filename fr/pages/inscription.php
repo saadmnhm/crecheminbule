@@ -1,6 +1,6 @@
 <?php
 // Set custom page title for SEO
-$page_title = 'Inscription - Rejoignez la Crèche Minibulle Rabat | Processus Simple';
+$page_title = 'Inscription - Rejoignez la Crèche Minibulle Casablanca | Processus Simple';
 
 include '../header.php';
 ?>
@@ -22,6 +22,28 @@ include '../topbar.php';
 			<div class="wrapper page-section">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
+
+
+					<div class="container-card-inscription">
+						<div class="card">
+							<p>Les Jeunes Marcheurs</p>
+							<img src="<?php echo $base_path; ?>assets/images/petit3.jpg" alt="Crèche Minibulle Casablanca">
+							<div class="zigzag"></div>
+							<p>8h15 à 12h00 <br> et <br> 14h00 à 16h30</p>
+						</div>
+						<div class="card">
+							<p>La Maternelle:</p>
+							<img src="<?php echo $base_path; ?>assets/images/petit4.jpg" alt="Crèche Minibulle Casablanca">
+							<div class="zigzag"></div>
+							<p>8h15 à 12h00 <br> et <br> 14h00 à 16h30</p>
+						</div>
+						<div class="card">
+							<p>Les Jeunes Marcheurs</p>
+							<img src="<?php echo $base_path; ?>assets/images/25.jpg" alt="Crèche Minibulle Casablanca">
+							<div class="zigzag"></div>
+							<p>Les mercredis après-midi jusqu'à 16h <br> et <br> Pendant les vacances scolaires</p>
+						</div>
+					</div>
 
 
 						<article id="post-20" class="post-20 page type-page status-publish hentry">

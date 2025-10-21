@@ -5,7 +5,6 @@ Fixes for accordion functionality, widget display, and enhanced styling
 
 /* Fix accordion styling */
 details[id^="e-n-accordion-item"] {
-    background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     border-radius: 8px;
     margin-bottom: 20px;details[id^="e-n-accordion-item"] ul li
@@ -28,16 +27,14 @@ details[id^="e-n-accordion-item"] summary::-webkit-details-marker {
     display: none;
 }
 
-details[id^="e-n-accordion-item"] summary::after {
+details[id^="e-n-accordion-item"] summary::before {
     content: '+';
     font-size: 24px;
     font-weight: bold;
     transition: transform 0.3s ease;
 }
 
-details[id^="e-n-accordion-item"][open] summary::after {
-    transform: rotate(45deg);
-}
+
 
 details[id^="e-n-accordion-item"] summary svg {
     width: 16px;
@@ -76,12 +73,13 @@ details[id^="e-n-accordion-item"] ul {
 details[id^="e-n-accordion-item"] ul li {
     display: flex;
     align-items: flex-start;
+    align-items: center;
     margin-bottom: 15px;
     padding: 15px;
-    background-color: #f8f9fa;
+    /* background-color: transparent; */
     border-radius: 8px;
     line-height: 1.6;
-    border-left: 3px solid #5750A0;
+    /* border-left: 3px solid #5750A0; */
     transition: all 0.3s ease;
 }
 
@@ -93,7 +91,7 @@ details[id^="e-n-accordion-item"] ul li:hover {
 details[id^="e-n-accordion-item"] ul li svg {
     width: 20px;
     height: 20px;
-    fill: #5750A0;
+    fill: white;
     margin-right: 15px;
     margin-top: 3px;
     flex-shrink: 0;
@@ -636,40 +634,43 @@ details ul li svg {
 /* Comprehensive accordion fix */
 details {
     border: 1px solid #e0e0e0 !important;
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     margin-bottom: 15px !important;
     overflow: hidden !important;
 }
 
 details summary {
-    background: #5750A0 !important;
-    color: white !important;
+    background: transparent !important;
+    color: black !important;
+    border: 1px solid white;
     padding: 20px !important;
     cursor: pointer !important;
     font-weight: 600 !important;
     display: flex !important;
-    justify-content: space-between !important;
 }
 
 details summary::-webkit-details-marker {
     display: none !important;
 }
 
-details summary::after {
+details summary::before {
     content: '+' !important;
+    margin-right: 20px !important;
     font-size: 20px !important;
     font-weight: bold !important;
     transition: transform 0.3s ease !important;
 }
 
-details[open] summary::after {
-    transform: rotate(45deg) !important;
+details[open] summary::before {
+    content: '-' !important;
+    font-size: 33px !important;
+    line-height: 20px;
 }
 
 details ul {
-    background: white !important;
+    background: transparent !important;
     margin: 0 !important;
-    padding: 20px !important;
+    padding: 9px !important;
     list-style: none !important;
 }
 

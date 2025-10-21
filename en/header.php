@@ -84,6 +84,9 @@ function is_active_page($page_name, $current_page, $current_dir) {
     <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle-1-32x32.png" sizes="32x32">
     <link rel="icon" href="<?php echo $base_path; ?>assets/images/icon/cropped-logo-creche-minibulle-1-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="<?php echo $base_path; ?>assets/images/icon/croched-logo-creche-minibulle-1-180x180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     
     <?php echo generate_json_ld($current_page, 'en'); ?>
 

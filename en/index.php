@@ -1,6 +1,6 @@
 <?php
 // Set custom page title and image for SEO
-$page_title = 'Minibulle - Premium Nursery & Kindergarten in Rabat Morocco';
+$page_title = 'Minibulle - Premium Nursery & Kindergarten in Casablanca Morocco';
 
 include './header.php';
 ?>

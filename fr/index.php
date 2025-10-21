@@ -1,6 +1,6 @@
 <?php
 // Set custom page title and image for SEO
-$page_title = 'Minibulle - Crèche & Maternelle Trilingue Premium à Rabat Maroc';
+$page_title = 'Minibulle - Crèche & Maternelle Trilingue Premium à Casablanca Maroc';
 
 include './header.php';
 ?>

@@ -61,7 +61,7 @@ $seo_config = [
     'organization' => [
         'name' => 'Crèche Minibulle',
         'type' => 'EducationalOrganization',
-        'address' => 'Rabat, Morocco',
+        'address' => 'Casablanca, Morocco',
         'phone' => '+212-XXXXXXXXX', // Update with real phone
         'email' => 'contact@crecheminibulle.ma'
     ]
@@ -143,19 +143,19 @@ Generates JSON-LD structured data for enhanced search results.
 The system now generates comprehensive meta tags like:
 ```html
 <!-- SEO Meta Tags -->
-<meta name="description" content="Premium trilingual nursery and kindergarten in Rabat...">
-<meta name="keywords" content="nursery rabat, kindergarten morocco, trilingual education...">
+<meta name="description" content="Premium trilingual nursery and kindergarten in Casablanca...">
+<meta name="keywords" content="nursery Casablanca, kindergarten morocco, trilingual education...">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://yoursite.com/en/">
 
 <!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Minibulle - Premium Nursery & Kindergarten Rabat">
-<meta property="og:description" content="Discover our trilingual nursery in Rabat...">
+<meta property="og:title" content="Minibulle - Premium Nursery & Kindergarten Casablanca">
+<meta property="og:description" content="Discover our trilingual nursery in Casablanca...">
 <meta property="og:image" content="https://yoursite.com/assets/images/creche_jeux.jpeg">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Minibulle - Premium Nursery & Kindergarten Rabat">
+<meta name="twitter:title" content="Minibulle - Premium Nursery & Kindergarten Casablanca">
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">

@@ -1,6 +1,6 @@
 <?php
 // Set custom page title for SEO
-$page_title = 'Nous Contacter - Crèche Minibulle Rabat | Informations & Visite';
+$page_title = 'Nous Contacter - Crèche Minibulle Casablanca | Informations & Visite';
 
 include '../header.php';
 ?>
@@ -26,14 +26,46 @@ include '../topbar.php';
 
 						<article id="post-25" class="post-25 page type-page status-publish hentry">
 							<div class="entry-content">
-								<h2>Découvrez l’univers de la Crèche Minibulle !</h2>
-								<h2>+212 669-439363<br>
+								<!-- <h2>Découvrez l’univers de la Crèche Minibulle !</h2>
+								<h2>+212 669-439363<br> -->
 								</h2>
-								<h2>Pour planifier votre visite, il vous suffit de remplir le formulaire ci-dessous.
-								</h2>
-								<h2>Bienvenue à Notre Crèche</h2>
-								<h2>
-									<p>Nous vous invitons à vivre une immersion dans notre crèche et à découvrir :</p>
+
+								<div class="formulair-contact">
+									<h2>Pour planifier votre visite, il vous suffit de remplir le formulaire ci-dessous.</h2>
+
+
+									<div class="visit-container">
+										<form class="visit-form">
+											<label for="nom">Nom :</label>
+											<input type="text" id="nom" name="nom" required>
+
+											<label for="prenom">Prénom :</label>
+											<input type="text" id="prenom" name="prenom" required>
+
+											<label for="email">E-mail :</label>
+											<input type="email" id="email" name="email" required>
+
+											<label for="tel">Téléphone :</label>
+											<input type="tel" id="tel" name="tel" required>
+
+											<button type="submit">Envoyer</button>
+										</form>
+
+										<!-- Right Text -->
+										<div class="visit-text">
+											<h3 class="text-center">Demande de visite :</h3>
+											<p>Si vous avez des questions ou des demandes de renseignements, n’hésitez pas à nous contacter.</p>
+											<p>Vous pouvez également nous rendre visite à l’une de nos journées portes ouvertes.</p>
+											<p>Nous serons ravis de vous accueillir dans notre Bulle.</p>
+											<p>Vos enfants pourront assister à l’un de nos ateliers créatifs pendant que nous vous présenterons nos espaces et notre équipe pédagogique.</p>
+											<p>Les programmes détaillés de nos journées portes ouvertes seront sur nos réseaux. Abonnez-vous vite à nos pages !</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="list-contact">
+									<h2> Nous vous invitons à vivre une immersion dans notre crèche et à découvrir :</h2>
+								
 									<ul>
 										<li>Nos espaces d’éveil, conçus pour favoriser l’autonomie et la créativité des
 											enfants ;</li>
@@ -41,13 +73,16 @@ include '../topbar.php';
 											développement de chaque enfant ;</li>
 										<li>Nos approches éducatives innovantes, alliant apprentissage ludique et
 											développement des soft skills.</li>
+										<li>Et ce n’est pas tout ! Pendant que vous explorez nos locaux, vos
+											enfants pourront profiter de notre espace de jeux.</li>
 									</ul>
-									<p><strong>Et ce n’est pas tout !</strong> Pendant que vous explorez nos locaux, vos
-										enfants pourront profiter de notre espace de jeux.</p>
-									<p>Suivez-nous sur nos réseaux sociaux pour rester informés de nos actualités.</p>
-									<p><strong>Nous serons ravis de vous accueillir bientôt !</strong></p>
-								</h2>
-								<p> <a href="https://www.instagram.com/crecheminibulle/#" target="_blank"><br>
+
+									
+								</div>
+								<h2>Suivez-nous sur nos réseaux sociaux pour rester informés de nos actualités.</h2>
+								<p><strong>Nous serons ravis de vous accueillir bientôt !</strong></p>
+								
+								 <a href="https://www.instagram.com/crecheminibulle/#" target="_blank"><br>
 										Instagram<br>
 										<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -60,7 +95,7 @@ include '../topbar.php';
 											<path
 												d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
 											</path>
-										</svg> </a></p>
+										</svg> </a>
 								<h2>+212 669-439363<br>
 								</h2>
 								<h2>Crèche minibulle, 27 Rue de Guise, Casablanca 20290</h2>

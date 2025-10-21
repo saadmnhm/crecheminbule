@@ -1,6 +1,6 @@
 <?php
 // Set custom page title for SEO
-$page_title = 'Enrollment - Join Minibulle Nursery Rabat | Simple Registration Process';
+$page_title = 'Enrollment - Join Minibulle Nursery Casablanca | Simple Registration Process';
 
 include '../header.php';
 ?>
@@ -22,6 +22,28 @@ include '../topbar.php';
 			<div class="wrapper page-section">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
+
+
+					<div class="container-card-inscription">
+						<div class="card">
+							<p>The Young Walkers</p>
+							<img src="<?php echo $base_path; ?>assets/images/petit3.jpg" alt="Minibulle Nursery Casablanca">
+							<div class="zigzag"></div>
+							<p>8h15  to 12h00  <br> and <br> 2h00  to 4h30 </p>
+						</div>
+						<div class="card">
+							<p>The Kindergarten:</p>
+							<img src="<?php echo $base_path; ?>assets/images/petit4.jpg" alt="Minibulle Nursery Casablanca">
+							<div class="zigzag"></div>
+							<p>8h15  to 12h00  <br> and <br> 2h00  to 4h30 </p>
+						</div>
+						<div class="card">
+							<p>The Young Walkers</p>
+							<img src="<?php echo $base_path; ?>assets/images/25.jpg" alt="Minibulle Nursery Casablanca">
+							<div class="zigzag"></div>
+							<p>Wednesday afternoons until 4h00  <br> and <br> During school holidays</p>
+						</div>
+					</div>
 
 
 						<article id="post-20" class="post-20 page type-page status-publish hentry">
