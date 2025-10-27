@@ -19,7 +19,7 @@ include '../topbar.php';
                     <div class="overlay"></div>
                     <header class="page-header">
                         <div class="wrapper">
-                            <h2 class="page-title">Approche pédagogique</h2>
+                            <h2 class="page-title font-cherry-title">Approche pédagogique</h2>
                         </div><!-- .wrapper -->
                     </header>
                 </div><!-- #page-site-header -->
@@ -39,7 +39,7 @@ include '../topbar.php';
                                         </div>
                                         <div class="text">
 
-                                            <h2>Nos Objectifs</h2>
+                                            <h2 class>Nos Objectifs</h2>
                                             <h3 style="color: #274082; font-weight: 500; font-size: 21px;">L’équipe pédagogique se charge de :</h3>
                                             <ul>
                                                 <li>
@@ -219,7 +219,7 @@ include '../topbar.php';
 
 
                                     <div class="valeur">
-                                        <h2 class="text-center" style="    font-weight: 600;">NOS VALEURS :</h2>
+                                        <h2 class="text-center font-cherry" style="    font-weight: 600; ">NOS VALEURS :</h2>
                                         <div class="container-card">
                                             <div class="card">
                                                 <p> <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px"

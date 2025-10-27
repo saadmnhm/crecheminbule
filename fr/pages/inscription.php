@@ -15,7 +15,7 @@ include '../topbar.php';
 				<div class="overlay"></div>
 				<header class='page-header'>
 					<div class="wrapper">
-						<h2 class="page-title">Inscription</h2>
+						<h2 class="page-title font-cherry-title">Inscription</h2>
 					</div><!-- .wrapper -->
 				</header>
 			</div><!-- #page-site-header -->
@@ -52,7 +52,7 @@ include '../topbar.php';
 								<link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/inscription-form.css">
 								
 								<div class="inscription-section">
-									<h2>Formulaire d'Inscription en Ligne<br>
+									<h2 class="font-cherry">Formulaire d'Inscription en Ligne<br>
 									</h2>
 									
 									<?php

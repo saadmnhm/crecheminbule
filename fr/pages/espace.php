@@ -11,7 +11,7 @@ include '../topbar.php';
 				<div class="overlay"></div>
 				<header class='page-header'>
 					<div class="wrapper">
-						<h2 class="page-title">Nos espaces</h2>
+						<h2 class="page-title font-cherry-title">Nos espaces</h2>
 					</div><!-- .wrapper -->
 				</header>
 			</div><!-- #page-site-header -->
@@ -22,7 +22,7 @@ include '../topbar.php';
 
 						<article id="post-94" class="post-94 page type-page status-publish hentry">
 							<div class="entry-content">
-								<h2>Nos Espaces à la minibulle</h2>
+								<h2 class="font-cherry">Nos Espaces à la minibulle</h2>
 								
 								<div class="image-slider-wrapper">
 									<div class="image-slider" id="espaceSlider">
@@ -95,107 +95,9 @@ include '../topbar.php';
 					</main><!-- #main -->
 				</div><!-- #primary -->
 
-				<aside id="secondary" class="widget-area" role="complementary">
-					<aside id="block-2" class="widget widget_block widget_search">
-						<form role="search" method="get" action="https://crecheminibulle.ma/"
-							class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label
-								class="wp-block-search__label" for="wp-block-search__input-1">Rechercher</label>
-							<div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input"
-									id="wp-block-search__input-1" placeholder="" value="" type="search" name="s"
-									required=""><button aria-label="" class="wp-block-search__button wp-element-button"
-									type="submit"></button></div>
-						</form>
-					</aside>
-					<aside id="search-1" class="widget widget_search">
-						<form role="search" method="get" class="search-form" action="https://crecheminibulle.ma/">
-							<label>
-								<span class="screen-reader-text">Search for:</span>
-								<input type="search" class="search-field" placeholder="Search ..." value="" name="s"
-									title="Search for:">
-							</label>
-							<button type="submit" class="search-submit" value="Search"><i
-									class="fas fa-search"></i></button>
-						</form>
-					</aside>
-					<aside id="recent-posts-1" class="widget widget_recent_entries">
-						<h2 class="widget-title">Articles récents</h2>
-						<ul>
-							<li>
-								<a href="../2025/07/21/0xfb7a3601/index.htm">0xfb7a3601</a>
-							</li>
-							<li>
-								<a href="../2025/05/29/0x1c8c5b6a-3/index.htm">0x1c8c5b6a</a>
-							</li>
-							<li>
-								<a href="../2025/05/03/0x1c8c5b6a-2/index.htm">0x1c8c5b6a</a>
-							</li>
-							<li>
-								<a href="../2025/05/03/0x1c8c5b6a/index.htm">0x1c8c5b6a</a>
-							</li>
-							<li>
-								<a href="../2024/04/23/les-bienfaits-dune-creche-trilingue/index.htm">Les Bienfaits
-									d’une Crèche Trilingue</a>
-							</li>
-						</ul>
-
-					</aside>
-					<aside id="recent-comments-1" class="widget widget_recent_comments">
-						<h2 class="widget-title">Commentaires récents</h2>
-						<ul id="recentcomments"></ul>
-					</aside>
-					<aside id="archives-1" class="widget widget_archive">
-						<h2 class="widget-title">Archives</h2>
-						<ul>
-							<li><a href='../2025/07/index.htm'>juillet 2025</a></li>
-							<li><a href='../2025/05/index.htm'>mai 2025</a></li>
-							<li><a href='../2024/04/index.htm'>avril 2024</a></li>
-							<li><a href='../2021/10/index.htm'>octobre 2021</a></li>
-							<li><a href='../2021/09/index.htm'>septembre 2021</a></li>
-							<li><a href='../2021/08/index.htm'>août 2021</a></li>
-							<li><a href='../2021/07/index.htm'>juillet 2021</a></li>
-							<li><a href='../2021/06/index.htm'>juin 2021</a></li>
-							<li><a href='../2021/05/index.htm'>mai 2021</a></li>
-							<li><a href='../2021/04/index.htm'>avril 2021</a></li>
-							<li><a href='../2021/03/index.htm'>mars 2021</a></li>
-							<li><a href='../2021/02/index.htm'>février 2021</a></li>
-							<li><a href='../2021/01/index.htm'>janvier 2021</a></li>
-							<li><a href='../2020/12/index.htm'>décembre 2020</a></li>
-							<li><a href='../2020/11/index.htm'>novembre 2020</a></li>
-							<li><a href='../2020/10/index.htm'>octobre 2020</a></li>
-							<li><a href='../2020/09/index.htm'>septembre 2020</a></li>
-							<li><a href='../2020/08/index.htm'>août 2020</a></li>
-							<li><a href='../2020/07/index.htm'>juillet 2020</a></li>
-							<li><a href='../2020/06/index.htm'>juin 2020</a></li>
-							<li><a href='../2020/05/index.htm'>mai 2020</a></li>
-							<li><a href='../2020/04/index.htm'>avril 2020</a></li>
-						</ul>
-
-					</aside>
-					<aside id="categories-2" class="widget widget_categories">
-						<h2 class="widget-title">Catégories</h2>
-						<ul>
-							<li class="cat-item cat-item-20"><a href="../category/learning/index.htm">Learning</a>
-							</li>
-							<li class="cat-item cat-item-1"><a
-									href="../category/uncategorized/index.htm">Uncategorized</a>
-							</li>
-						</ul>
-
-					</aside>
-					<aside id="meta-1" class="widget widget_meta">
-						<h2 class="widget-title">Méta</h2>
-						<ul>
-							<li><a href="../wp-login.php.html">Connexion</a></li>
-							<li><a href="../feed/index.htm">Flux des publications</a></li>
-							<li><a href="../comments/feed/index.htm">Flux des commentaires</a></li>
-
-							<li><a href="https://fr.wordpress.org/">Site de WordPress-FR</a></li>
-						</ul>
-
-					</aside>
-				</aside><!-- #secondary -->
 			</div>
 		</div>
+		
 <?php
 include '../footer.php';
 ?>		

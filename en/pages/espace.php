@@ -11,7 +11,7 @@ include '../topbar.php';
 				<div class="overlay"></div>
 				<header class='page-header'>
 					<div class="wrapper">
-						<h2 class="page-title">Our Spaces</h2>
+						<h2 class="page-title font-cherry-title">Our Spaces</h2>
 					</div><!-- .wrapper -->
 				</header>
 			</div><!-- #page-site-header -->
@@ -22,7 +22,7 @@ include '../topbar.php';
 
 						<article id="post-94" class="post-94 page type-page status-publish hentry">
 							<div class="entry-content">
-								<h2>Our Spaces at Minibulle</h2>
+								<h2 class="font-cherry">Our Spaces at Minibulle</h2>
 								
 								<div class="image-slider-wrapper">
 									<div class="image-slider" id="espaceSlider">

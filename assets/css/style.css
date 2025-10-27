@@ -126,6 +126,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
         /* body,p,h1,h2,h3,h4,h5,h6 {
             font-family: "Cherry Bomb One" !important;
         } */
+         .font-cherry{
+            font-family: 'Gloria Hallelujah', cursive !important;
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-align: center;
+                color: #274082 !important;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                animation: waveEffect 2.5s infinite 
+            ease-in-out;
+         }
+         .font-cherry-title{
+            font-family: 'Gloria Hallelujah', cursive !important;
+            font-size: 2.5rem;
+                font-weight: 700;
+
+         }
          .text-center{
             text-align: center !important;
          }
@@ -1300,7 +1318,7 @@ button.dropdown-toggle {
     padding: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    /* right: 0; */
     z-index: 10;
     background-color: transparent;
     color: #000;
@@ -1309,6 +1327,11 @@ button.dropdown-toggle {
     height: 45px;
     line-height: 50px;
     border-radius: 0;
+}
+button.dropdown-toggle i {
+    position: relative;
+    left: 10px;
+    top: 4px;
 }
 button.dropdown-toggle.active i {
     transform: rotate(-180deg);
@@ -6779,6 +6802,7 @@ ul.products .entry-container {
 
         .language-nav li {
             display: inline;
+            margin: 0px !important;
         }
 
         .language-nav a {
@@ -6792,45 +6816,35 @@ ul.products .entry-container {
 
         @media screen and (min-width: 992px) {
 
-            /* Remove float and align social icons */
             #top-bar.col-2 .widget+.widget {
                 float: none;
                 display: inline-block;
                 vertical-align: middle;
-                margin-left: 100px;
             }
 
-            /* Wrap social icons and language menu in flex */
             .widget_social_icons .social-icons {
-                display: inline-flex;
+                display: flex;
                 align-items: center;
+                gap: 25px;
             }
 
-            /* Ensures the language menu stays in the same line */
             .language-menu-container {
                 display: inline-flex;
                 align-items: center;
-                margin-left: 60px;
-                /* Spacing between social icons and language */
             }
         }
 
-        /* 📱 Mobile View — Ensure Language Menu is Visible */
         @media screen and (max-width: 991px) {
 
-            /* Hide all other elements except phone and language */
             #top-bar .widget_address_block li:not(:nth-child(2)) {
                 display: none;
-                /* Hides all except phone number */
             }
 
-            /* Show Language Menu */
             .language-menu-container {
                 display: inline-block !important;
                 margin-left: 30px;
             }
 
-            /* Optional: Stack elements vertically if needed */
             #top-bar .wrapper {
                 display: flex;
                 flex-wrap: wrap;
@@ -6838,7 +6852,6 @@ ul.products .entry-container {
                 align-items: center;
             }
 
-            /* Adjust phone and language layout */
             #top-bar .widget_address_block a,
             .language-nav a {
                 font-size: 14px;
@@ -7231,7 +7244,7 @@ ul.products .entry-container {
 
 .lightbox-title {
     position: absolute;
-    bottom: -50px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -7328,9 +7341,11 @@ ul.products .entry-container {
 }
 
 @media screen and (max-width: 1024px) {
+    .widget.widget_social_icons{
+        display: none !important;
+    }
     .mobile-language-menu{
-        display: flex !important
-;
+        display: flex !important;
         height: 58px;
         justify-content: center;
         align-items: center;
@@ -7649,7 +7664,15 @@ ul.products .entry-container {
   flex-direction: column;
   margin-top: 90px;
 }
+@media (max-width: 768px) {
+    .visit-form{
+        order: 2;
+    }
+    .visit-text{
+        order: 1;
+    }
 
+}
 .visit-form label {
   color: #a3a400;
   font-weight: 600;
@@ -7724,4 +7747,40 @@ ul.products .entry-container {
             position: relative;
         }
     }
+}
+.reseau{
+    text-align: center;
+    .d-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    svg{
+        width: 50px;
+    }
+    .instagram-svg{
+        fill: #e1306c;
+    }
+    .facebook-svg{
+        fill: #3b5998;
+    }   
+}
+
+.maps{
+    text-align: center;
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+.slider-btn{
+    padding: 0px !important;
+}
+
+.header-wrapper{
+        display: flex;
+    justify-content: center;
 }

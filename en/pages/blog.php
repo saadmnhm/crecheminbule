@@ -12,7 +12,7 @@ include '../topbar.php';
 				<div class="overlay"></div>
 				<header class='page-header'>
 					<div class="wrapper">
-						<h2 class="page-title">Blog</h2>
+						<h2 class="page-title font-cherry-title">Blog</h2>
 					</div><!-- .wrapper -->
 				</header>
 			</div><!-- #page-site-header -->
@@ -22,7 +22,7 @@ include '../topbar.php';
 
 
 						<article id="article" class="post-421 page type-page status-publish hentry">
-                            <h2>Blog</h2>
+                            <h2 class="font-cherry text-center">Blog : </h2>
 							<div class="container">
                                     <a href="articles/les-bienfaits-dune-creche-trilingue/index.php" class="col-md-3">
                                         <div class="image-article">

@@ -225,7 +225,7 @@ include './topbar.php';
                         <article>
 
                             <div class="featured-image"
-                                style="background-image: url('<?php echo $base_path; ?>assets/images/creche_jeux.jpeg');">
+                                style="background-image: url('<?php echo $base_path; ?>assets/images/mot-directeur.jpeg');">
                                 <a href="contact/index.htm" class="post-thumbnail-link"></a>
                             </div><!-- .featured-image -->
 

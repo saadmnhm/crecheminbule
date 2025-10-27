@@ -11,7 +11,7 @@ include '../topbar.php';
 				<div class="overlay"></div>
 				<header class='page-header'>
 					<div class="wrapper">
-						<h2 class="page-title">Nos évènements</h2>
+						<h2 class="page-title font-cherry-title">Nos évènements</h2>
 					</div><!-- .wrapper -->
 				</header>
 			</div><!-- #page-site-header -->

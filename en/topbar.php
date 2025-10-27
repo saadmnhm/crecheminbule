@@ -1,6 +1,6 @@
 <div id="page" class="site">
  <div id="top-bar" class="top-bar-widgets col-2">
-            <div class="wrapper">
+            <div class="header-wrapper">
 
                 <div class="widget widget_address_block">
                     <ul>
@@ -14,7 +14,7 @@
                     <div class="social-icons">
                         <ul>
                             <li><a href="https://www.instagram.com/crecheminibulle" target="_blank"></a></li>
-                            <li><a href="https://www.facebook.com/crecheminibulle" target="_blank"></a></li>
+                            <li><a href="https://web.facebook.com/profile.php?id=61571194665268" target="_blank"></a></li>
                         </ul>
                         
                         <!-- Language Menu -->
@@ -119,7 +119,7 @@
                                 </a>
                             </li>
                             <li id="menu-item-492"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-492">
+                                class="text-center menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-492">
                                 <a href="#" style= "display: block ;">
                                     <div class="icon icon3">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#ffffffff" d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg>
